@@ -27,8 +27,8 @@ function Brand() {
   ];
   return (
     <div>
-      <div className="cursor-pointer">
-        <NavTitle title="Shop by Brand" />
+      <div className="cursor-pointer" onClick={()=>setShowBrands(!showBrands)}>
+        <NavTitle title="Shop by Brand" icons={true} />
       </div>
       {showBrands && (
         <motion.div

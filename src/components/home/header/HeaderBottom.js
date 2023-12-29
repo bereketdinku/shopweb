@@ -136,25 +136,26 @@ function HeaderBottom() {
                     Signin
                   </li>
                 </Link>
-                <Link to="/signin">
+                <Link to="/signup">
                   <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
                     Signup
                   </li>
                 </Link>
-                <Link to="/signin">
+                
                   <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
                     Profile
                   </li>
-                </Link>
-                <Link to="/signin">
+                
+                
                   <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
                     Others
                   </li>
-                </Link>
+                
               </motion.ul>
             )}
             <Link to="/cart">
               <div className="relative">
+                <FaShoppingCart/>
                 <span className="absolute font-titleFont top-3 -right-2 text-xs w-4 h-4 flex items-center justify-center rounded-full bg-primeColor text-white">
                   {products.length > 0 ? products.length : 0}
                 </span>

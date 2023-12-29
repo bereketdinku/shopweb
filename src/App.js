@@ -22,6 +22,8 @@ import About from "./pages/about/About";
 import Offer from "./pages/offer/Offer";
 import Payment from "./pages/payment/Payment";
 import ProductDetails from "./pages/productDetails/ProductDetails";
+import SignIn from "./pages/account/SignIn";
+import SignUp from "./pages/account/SignUp";
 const Layout = () => {
   return (
     <div>
@@ -48,6 +50,8 @@ const router = createBrowserRouter(
         <Route path="/offer" element={<Offer />} />
         <Route path="/paymentgateway" element={<Payment />} />
         <Route path="/product/:_id" element={<ProductDetails />} />
+        <Route path="/signin" element={<SignIn/>}/>
+        <Route path="/signup" element={<SignUp/>}/>
       </Route>
     </Route>
   )
